@@ -1,0 +1,74 @@
+/*--------------------------------------------
+ESTILOS PARTÍCULA ACORDEON
+--------------------------------------------*/
+.ir-arriba { 
+    position: fixed; 
+    width: 3rem;
+    height: 3rem;
+    line-height: 0;
+    /*bottom: -4rem;*/
+    right: 1rem;
+    color: #fff;
+    padding: 0;
+    z-index: 999;
+    outline: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    -webkit-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+}
+.ir-arriba:hover {
+    background: $accent-color-1 !important;
+}
+.ir-arriba .fa{
+    line-height: 0;
+}
+
+/*Efecto 1*/
+.ir-arriba-estilo1-defecto{
+    bottom: 1rem;
+    opacity: 0;
+}
+.ir-arriba-estilo1{
+opacity: 1;
+}
+/*Efecto 2*/
+.ir-arriba-estilo2-defecto{
+    bottom: -4rem;
+    padding: 0;
+}
+.ir-arriba-estilo2{
+    bottom: 1rem;
+    padding: 0;
+}
+
+
+/*Efecto 3*/
+.ir-arriba-estilo3-defecto{
+     bottom: 1rem;
+     -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+.ir-arriba-estilo3{
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+/*Efecto 4*/
+.ir-arriba-estilo4-defecto{
+     bottom: 1rem;
+     transform: rotateY(90deg);
+    -webkit-transform: rotateY(90deg);
+    -webkit-transition: transform 600ms;
+}
+.ir-arriba-estilo4{
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+    -webkit-transition: transform 600ms;
+}
+
