@@ -1,5 +1,5 @@
 # Atomo "Ir arriba"
-Este átomo es una mejora a la partícula "To top" que viene por defeecto en Gantry y nos permite incluir un botón para dirigirnos a la parte superior de la página haciendo un efecto de scroll suavizado. 
+Este átomo es una mejora a la partícula "To top" que viene por defecto en Gantry y nos permite incluir un botón para dirigirnos a la parte superior de la página haciendo un efecto de scroll suavizado. 
 
 Instalación
 -----------
