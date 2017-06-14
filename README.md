@@ -11,7 +11,7 @@ El modo de instalación es muy sencillo:
 + Busque o crée la carpeta "particles" dentro de tu carpeta "custom" en tu plantilla Gantry. Ejem: g5_hydrogen/custom/particles
 + Cópie los archivos atomo-Ir-arriba.yaml y atomo-Ir-arriba.html.twig dentro de dicha carpeta (custom/particles).
 + Cópie el archivo css/_ir-arriba.scss dentro de /custom/scss Ejemplo:  /g5_hydrogen/custom/css
-+ Escriba esta linea de código dentro de su archivo custom.scss
++ Dentro de su archivo custom.scss, escriba estas lineas de código:
 
 /*Estilos partícula "Ir-arriba" */
 
