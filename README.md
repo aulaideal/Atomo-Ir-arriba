@@ -14,6 +14,7 @@ El modo de instalación es muy sencillo:
 + Escriba esta linea de código dentro de su archivo custom.scss
 
 /*Estilos partícula "Ir-arriba" */
+
 @import "ir-arriba";
 
 
