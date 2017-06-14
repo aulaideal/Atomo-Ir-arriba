@@ -13,8 +13,7 @@ El modo de instalación es muy sencillo:
 + Cópie el archivo css/_ir-arriba.scss dentro de /custom/scss Ejemplo:  /g5_hydrogen/custom/css
 + Escriba esta linea de código dentro de su archivo custom.scss
 
-/*Estilos partícula owlcarousel */
-
+/*Estilos partícula "Ir-arriba" */
 @import "ir-arriba";
 
 
