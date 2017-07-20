@@ -3,30 +3,27 @@
 {% block javascript_footer %}
     {% if particle.enabled %}
         {% do gantry.load('jquery') %}
-        {{ parent() }}
-        
+        {{ parent() }}        
             <script>
                 (function($) {
                     $(window).load(function() {
 
-
-                     $('body').append('<a class="ir-arriba ir-arriba-{{ particle.efecto|e }}-defecto" href="#" style="background:{{ particle.colorfondo|e }}; border-radius:{{ particle.border-radius|e }}; width:{{ particle.anchura|e }}; height:{{ particle.altura|e }};"><i class="{{ particle.buttonicon|e }}" style="color:{{ particle.coloricono|e }};"aria-hidden="true"> </i> </a>');  
-                    
+             $('body').append('<a class="ir-arriba ir-arriba-{{ particle.efecto|e }}-defecto {% if particle.colorfondo %}g-ir-arriba-confondo{% endif %}" href="#" style="{%- if particle.colorfondo -%}background:{{ particle.colorfondo|e }};{%- endif -%}{%- if particle.coloricono -%}color:{{ particle.coloricono|e }};{%- endif -%}{%- if particle.borderradius -%}border-radius:{{ particle.borderradius|e }};{%- endif -%}{%- if particle.espaciado -%}padding:{{ particle.espaciado|e }};{%- endif -%}{%- if particle.grosorborde -%}border:{{ particle.grosorborde|e }} solid{%- endif -%} {% if particle.colorborde %} {{ particle.colorborde|e }}{% endif %};"><i class="{{ particle.buttonicon|e }}" aria-hidden="true"> </i> </a>'); 
 
                      $(window).scroll(function () {
-					if ($(this).scrollTop() > {{ particle.offset|e }}) {
-						$('.ir-arriba').addClass('ir-arriba-{{ particle.efecto|e }}');
-					} else {
-						$('.ir-arriba').removeClass('ir-arriba-{{ particle.efecto|e }}');
-					}
-					});
+                    if ($(this).scrollTop() > {{ particle.offset|e }}) {
+                        $('.ir-arriba').addClass('ir-arriba-{{ particle.efecto|e }}');
+                    } else {
+                        $('.ir-arriba').removeClass('ir-arriba-{{ particle.efecto|e }}');
+                    }
+                    });
 
                      $('.ir-arriba').click(function () {
-					 $('body,html').animate({
-						scrollTop: 0,
-						}, {{ particle.velocidadscroll|e }});
-						return false;
-					});
+                     $('body,html').animate({
+                        scrollTop: 0,
+                        }, {{ particle.velocidadscroll|e }});
+                        return false;
+                    });
 
                     });
                 })(jQuery);
