@@ -14,6 +14,15 @@ form:
       type: separator.note
       class: alert alert-info
       content: Este Átomo te permite mostrar un botón en la parte inferior de tu página que te dirijirá a la parte superior usando un deslizamiento suave.
+
+    alineacion:
+      type: input.radios
+      label: Alineación
+      description: 'Alineación horizontal del botón'
+      default: izquierda
+      options:
+        g-arriba-izquierda: Izquierda
+        g-arriba-derecha: Derecha
   
 
     offset:
@@ -50,24 +59,28 @@ form:
       label: Color de Ícono
       default: "#ffffff"
 
-    border-radius:
+    miborderradius:
       type: input.text
       label: Borde redondeado
-      description: Tambien puede usar px o rem (50% para obtener un circulo perfecto).
-      default: '50%'
-   
-    anchura:
-      type: input.text
-      label: Ancho del botón
-      description: Defina el ancho del botón.
-      default: '30px'
+      description: Puede usar px, rem  o %(50% para obtener un circulo perfecto).
+      placeholder: '0'  
 
-    altura:
+    grosorborde:
       type: input.text
-      label: Altura del botón
-      description: Defina la altura del botón.
-      default: '30px'
+      label: Anchura del borde
+      description: Define una anchura para el borde. 
+      placeholder: '0'
+
+    colorborde:
+      type: input.colorpicker
+      label: Color del borde
     
+    espaciado:
+      type: input.text
+      label: Espaciado interior
+      description: Define el espaciado interior del botón.
+      placeholder: '0'      
+   
     velocidadscroll:
       type: input.text
       label: Velocidad del Scroll

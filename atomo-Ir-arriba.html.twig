@@ -8,7 +8,7 @@
                 (function($) {
                     $(window).load(function() {
 
-             $('body').append('<a class="ir-arriba ir-arriba-{{ particle.efecto|e }}-defecto {% if particle.colorfondo %}g-ir-arriba-confondo{% endif %}" href="#" style="{%- if particle.colorfondo -%}background:{{ particle.colorfondo|e }};{%- endif -%}{%- if particle.coloricono -%}color:{{ particle.coloricono|e }};{%- endif -%}{%- if particle.borderradius -%}border-radius:{{ particle.borderradius|e }};{%- endif -%}{%- if particle.espaciado -%}padding:{{ particle.espaciado|e }};{%- endif -%}{%- if particle.grosorborde -%}border:{{ particle.grosorborde|e }} solid{%- endif -%} {% if particle.colorborde %} {{ particle.colorborde|e }}{% endif %};"><i class="{{ particle.buttonicon|e }}" aria-hidden="true"> </i> </a>'); 
+             $('body').append('<a class="ir-arriba ir-arriba-{{ particle.efecto|e }}-defecto {{ particle.alineacion|e }} {% if particle.colorfondo %}g-ir-arriba-confondo{% endif %}" href="#" style="{%- if particle.colorfondo -%}background:{{ particle.colorfondo|e }};{%- endif -%}{%- if particle.coloricono -%}color:{{ particle.coloricono|e }};{%- endif -%}{%- if particle.miborderradius -%}border-radius:{{ particle.miborderradius }};{%- endif -%} {%- if particle.espaciado -%}padding:{{ particle.espaciado|e }};{%- endif -%}{%- if particle.grosorborde -%}border:{{ particle.grosorborde|e }} solid{%- endif -%} {% if particle.colorborde %} {{ particle.colorborde|e }}{% endif %};"><i class="{{ particle.buttonicon|e }}" aria-hidden="true"> </i> </a>'); 
 
                      $(window).scroll(function () {
                     if ($(this).scrollTop() > {{ particle.offset|e }}) {
